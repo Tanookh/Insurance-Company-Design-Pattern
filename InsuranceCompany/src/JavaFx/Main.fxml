@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="FirstMainAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="303.0" style="-fx-background-color: #e8e8e8; -fx-background-radius: 30; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFxController.MainController">
+   <children>
+      <Text fill="#3f5080" layoutX="71.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="U-Health" textAlignment="CENTER" wrappingWidth="160.0781244188547">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#3f3d61" />
+         </effect>
+      </Text>
+      <Text layoutX="12.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sell" textAlignment="CENTER" wrappingWidth="54.00000196695328">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="12.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View" textAlignment="CENTER" wrappingWidth="54.00000196695328">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="ViewPurchaseBtn" layoutX="80.0" layoutY="346.0" mnemonicParsing="false" onAction="#ViewPurchaseBtnPressed" prefHeight="32.0" prefWidth="144.0" style="-fx-background-radius: 50; -fx-background-color: #1E90FF;" text="View purchases" textAlignment="CENTER">
+         <effect>
+            <Reflection fraction="0.65" topOpacity="0.25" />
+         </effect></Button>
+      <Button fx:id="CarInsBtn" layoutX="26.0" layoutY="244.0" mnemonicParsing="false" onAction="#CarInsBtnPressed" prefHeight="34.0" prefWidth="107.0" style="-fx-background-radius: 50; -fx-background-color: #1E90FF;" text="Car Ins." textAlignment="CENTER" />
+      <Button fx:id="ApartmentInsBtn" layoutX="170.0" layoutY="244.0" mnemonicParsing="false" onAction="#ApartmentInsBtnPressed" prefHeight="34.0" prefWidth="107.0" style="-fx-background-radius: 50; -fx-background-color: #1E90FF;" text="Apartment Ins." textAlignment="CENTER" />
+      <Button fx:id="LifeInsBtn" layoutX="26.0" layoutY="296.0" mnemonicParsing="false" onAction="#LifeInsBtnPressed" prefHeight="34.0" prefWidth="107.0" style="-fx-background-radius: 50; -fx-background-color: #1E90FF;" text="Life Ins." textAlignment="CENTER" />
+      <Button fx:id="HealthInsBtn" layoutX="169.0" layoutY="296.0" mnemonicParsing="false" onAction="#HealthInsBtnPressed" prefHeight="34.0" prefWidth="107.0" style="-fx-background-radius: 50; -fx-background-color: #1E90FF;" text="Health Ins." textAlignment="CENTER" />
+      <ChoiceBox fx:id="SellChoiceBox" layoutX="77.0" layoutY="80.0" prefWidth="150.0" />
+      <Button fx:id="CarInsGreenBtn" layoutX="26.0" layoutY="244.0" mnemonicParsing="false" onAction="#CarInsGreenBtnPressed" prefHeight="34.0" prefWidth="107.0" style="-fx-background-radius: 50; -fx-background-color: #228B22;" text="Car Ins." textAlignment="CENTER" visible="false" />
+      <Button fx:id="ApartmentInsGreenBtn" layoutX="170.0" layoutY="244.0" mnemonicParsing="false" onAction="#ApartmentInsGreenBtnPressed" prefHeight="34.0" prefWidth="107.0" style="-fx-background-radius: 50; -fx-background-color: #228B22;" text="Apartment Ins." textAlignment="CENTER" visible="false" />
+      <Button fx:id="LifeInsGreenBtn" layoutX="26.0" layoutY="296.0" mnemonicParsing="false" onAction="#LifeInsGreenBtnPressed" prefHeight="34.0" prefWidth="107.0" style="-fx-background-radius: 50; -fx-background-color: #228B22;" text="Life Ins." textAlignment="CENTER" visible="false" />
+      <Button fx:id="HealthInsGreenBtn" layoutX="169.0" layoutY="296.0" mnemonicParsing="false" onAction="#HealthInsGreenBtnPressed" prefHeight="34.0" prefWidth="107.0" style="-fx-background-radius: 50; -fx-background-color: #228B22;" text="Health Ins." textAlignment="CENTER" visible="false" />
+      <Button fx:id="SellBtn" layoutX="98.0" layoutY="141.0" mnemonicParsing="false" onAction="#SellBtnPressed" prefHeight="34.0" prefWidth="107.0" style="-fx-background-radius: 50; -fx-background-color: #1E90FF;" text="Sell" textAlignment="CENTER" />
+      <Text fx:id="ChooseInsText" fill="RED" layoutX="71.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please choose insurance" textAlignment="CENTER" visible="false" wrappingWidth="160.078125">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="QuestionMark" layoutX="-1.0" layoutY="7.0" minHeight="0.0" minWidth="18.0" mnemonicParsing="false" onAction="#QuestionMarkPressed" prefHeight="32.0" prefWidth="54.0" style="-fx-background-color: transparent;" text="❓" />
+      <Text fx:id="QuestionMarkTxt" fill="#464646" layoutX="44.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Call 1900-8888-2143 for help" textAlignment="CENTER" visible="false" wrappingWidth="160.078125">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="CategoryTxt" fill="RED" layoutX="61.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose at lease one category" textAlignment="CENTER" visible="false" wrappingWidth="179.07811879624933">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="65.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose one or more" textAlignment="CENTER" wrappingWidth="170.00000113851638">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="jsonText" layoutX="39.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" textAlignment="CENTER" wrappingWidth="223.0000103206121">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="BLUE" layoutX="4.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="--------------------------------------------------------" textAlignment="CENTER" wrappingWidth="294.078125">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="NewInsAnchorPane" layoutX="1.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="303.0" style="-fx-background-color: #e8e8e8; -fx-background-radius: 30; -fx-border-radius: 20;" visible="false">
+         <children>
+            <Text fill="#3f5080" layoutX="71.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="U-Health" textAlignment="CENTER" wrappingWidth="160.0781244188547">
+               <font>
+                  <Font name="Arial Bold" size="30.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#3f3d61" />
+               </effect>
+            </Text>
+            <Text fx:id="NewLifeInsTxt" layoutX="62.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Life insurance" textAlignment="CENTER" visible="false" wrappingWidth="179.078125">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="NewApartmentInsTxt" layoutX="62.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Apartment insurance" textAlignment="CENTER" visible="false" wrappingWidth="179.078125">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="NewHealthInsTxt" layoutX="62.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Health insurance" textAlignment="CENTER" visible="false" wrappingWidth="179.078125">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="NewCarInsTxt" layoutX="80.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Car insurance" textAlignment="CENTER" visible="false" wrappingWidth="144.078125">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="NewInsBackBtn" layoutX="33.0" layoutY="309.0" mnemonicParsing="false" onAction="#NewInsBackBtnPressed" prefHeight="34.0" prefWidth="107.0" style="-fx-background-radius: 50; -fx-background-color: #1E90FF;" text="Back" textAlignment="CENTER" />
+            <Button fx:id="SaveBtn" layoutX="170.0" layoutY="309.0" mnemonicParsing="false" onAction="#SaveBtnPressed" prefHeight="34.0" prefWidth="107.0" style="-fx-background-radius: 50; -fx-background-color: #1E90FF;" text="Save" textAlignment="CENTER" />
+            <Text layoutX="6.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Full Name:" textAlignment="CENTER" wrappingWidth="107.00000573694706">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="33.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Date: " textAlignment="CENTER" wrappingWidth="53.99999887283775">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="7.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remarks: " textAlignment="CENTER" wrappingWidth="107.00000235065818">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="NewInsFullNameLbl" layoutX="121.0" layoutY="103.0" />
+            <TextField fx:id="NewInsIDLbl" layoutX="121.0" layoutY="145.0" />
+            <Text layoutX="38.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* ID: " textAlignment="CENTER" wrappingWidth="42.99999773771924">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="NewInsDateLbl" layoutX="121.0" layoutY="186.0" />
+            <TextField fx:id="NewInsRemarksLbl" layoutX="121.0" layoutY="228.0" />
+            <Text fx:id="RequiredFieldText" fill="RED" layoutX="14.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Required fields" textAlignment="CENTER" wrappingWidth="113.07812309265137">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="NewInsFillReqFieldsText" fill="RED" layoutX="67.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please fill required fields" textAlignment="CENTER" visible="false" wrappingWidth="170.000002498487">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="DataSavedSuccessfullyText" fill="#2c7c1d" layoutX="53.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data was successfully saved" textAlignment="CENTER" visible="false" wrappingWidth="198.000002498487">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="DataSavedFailedText" fill="#ff1500" layoutX="66.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data was NOT saved. Try again" textAlignment="CENTER" visible="false" wrappingWidth="170.00000498106147">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="jsonText1" layoutX="38.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" textAlignment="CENTER" wrappingWidth="223.0000103206121">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ViewInsAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="303.0" style="-fx-background-color: #e8e8e8; -fx-background-radius: 30; -fx-border-radius: 20;" visible="false">
+         <children>
+            <Text fill="#3f5080" layoutX="71.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="U-Health" textAlignment="CENTER" wrappingWidth="160.0781244188547">
+               <font>
+                  <Font name="Arial Bold" size="30.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#3f3d61" />
+               </effect>
+            </Text>
+            <Button fx:id="ViewInsBackBtn" layoutX="89.0" layoutY="313.0" mnemonicParsing="false" onAction="#ViewInsBackBtnPressed" prefHeight="34.0" prefWidth="107.0" style="-fx-background-radius: 50; -fx-background-color: #1E90FF;" text="Back" textAlignment="CENTER" />
+            <Text layoutX="82.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Selected Purchase" textAlignment="CENTER" wrappingWidth="137.00000235065818">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <TableView fx:id="ViewInsTable" layoutX="8.0" layoutY="146.0" prefHeight="143.0" prefWidth="286.0">
+              <columns>
+                <TableColumn fx:id="ViewInsName" prefWidth="52.00000190734863" text="Name" />
+                  <TableColumn fx:id="ViewInsID" prefWidth="41.0" text="ID" />
+                  <TableColumn fx:id="ViewInsDate" prefWidth="48.99999237060547" text="Date" />
+                  <TableColumn fx:id="ViewInsRemarks" prefWidth="65.99996948242188" text="Remarks" />
+                  <TableColumn fx:id="ViewInsType" prefWidth="76.00003051757812" text="Ins Type" />
+              </columns>
+            </TableView>
+            <Text fx:id="jsonText11" layoutX="39.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" textAlignment="CENTER" wrappingWidth="223.0000103206121">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
